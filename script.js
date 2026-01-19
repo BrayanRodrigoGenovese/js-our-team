@@ -42,12 +42,15 @@ let teamMemberCards = document.getElementById("team-member-cards");
 
 for (const member of teamMembers) {
   teamMemberCards.innerHTML += `
-        <div>
-            <img src="${member.img}" alt="">
-            <div>
+        <div class="row col-4" id="card">
+            <div class="col-md-4">
+              <img src="${member.img}" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-8">
                 <h2>${member.name}</h2>
                 <p>${member.role}</p>
-                <p><a href="mailto:${member.email}">${member.email}</a></p>
+                <a href="mailto:${member.email}">${member.email}</a>
             </div>
         </div>`;
 }

@@ -1,0 +1,29 @@
+:root {
+  /* COLORS */
+  --title-color: rgb(229 49 112);
+  --card-color: rgb(0, 0, 0);
+  --primary-text-color: rgb(0, 0, 0);
+  --secondary-text-color: rgb(255, 255, 255);
+  --mail-text-color: rgb(91 196 242);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Fredoka;
+  font-size: 14pt;
+}
+
+h1 {
+  color: var(--title-color);
+}
+
+a {
+  color: var(--mail-text-color);
+}
+
+#card {
+  color: var(--secondary-text-color);
+  background-color: var(--card-color);
+}
