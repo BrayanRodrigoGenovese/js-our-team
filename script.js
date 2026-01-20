@@ -37,10 +37,7 @@ const teamMembers = [
   },
 ];
 
-// selectors
-let grid = document.getElementById("grid");
-
-for (const member of teamMembers) {
+function addMember(member) {
   grid.innerHTML += `
         <div class="col-lg-6 col-xxl-4">
         <div class="bg-black text-white">
@@ -60,3 +57,24 @@ for (const member of teamMembers) {
         </div>
         </div>`;
 }
+
+// selectors
+const grid = document.getElementById("grid");
+const form = document.getElementsByTagName("form")[0];
+
+// populating grid
+for (const member of teamMembers) {
+  addMember(member);
+}
+
+// adding listener
+form.addEventListener("change", (e) => {
+  const file = e.target.files[0];
+
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      pro;
+    };
+  }
+});
