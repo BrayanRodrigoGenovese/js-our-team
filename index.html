@@ -14,6 +14,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body style="font-family: Fredoka">
@@ -38,26 +39,34 @@
             <div class="row justify-content-center">
                 <h2 class="text-center">ADD NEW MEMBER</h2>
 
-                <div class="col-4 bg-black text-white">
-                    <di class="row">
+                <div class="col-5 bg-black text-white">
+                    <di class="row justify-content-center">
 
-                        <!-- <div class="col-4">
-                            <div class="h-100 w-100">
-                                <label for="img" class="">img</label><br>
-                                <input type="file" id="file" name="file" accept=".jpg, jpeg,.png"><br>
-                            </div>
-                        </div> -->
+                        <!-- IMAGE UPLOAD SPACE -->
+                        <div class="col-2">
+                            <input type="file" id="imageUpload" accept="image/*" class="d-none">
+                            <label for="imageUpload">
+                                <i class="bi bi-person-bounding-box text-secondary" style="font-size: 90pt;"></i>
+                            </label>
+                        </div>
 
+                        <!-- NEW MEMBER FIELDS -->
                         <div class="col-8 my-4 text-end">
-                            <div class="row">
-                                <label for="name" class="col-4 mb-0 fw-bold">name</label>
-                                <input class="col-8" type="text" id="name" name="name"><br>
+                            <div class="row align-items-center">
+                                <label for="name" class="col-4 fs-3 my-2 fw-bold">NAME</label>
+                                <input
+                                    class="col-8 fs-3 my-2 fw-bold text-white text-uppercase bg-black border-0 border-bottom focus-ring shadow-none"
+                                    type="text" id="name" name="name"><br>
 
-                                <label for="role" class="col-4 mb-0">role</label>
-                                <input class="col-8" type="text" id="role" name="role"><br>
+                                <label for="role" class="col-4 fs-5 my-2">Role</label>
+                                <input
+                                    class="col-8 fs-5 my-2 text-white bg-black border-0 border-bottom focus-ring shadow-none"
+                                    type="text" id="role" name="role"><br>
 
-                                <label for="email" class="col-4 text-info text-decoration-none">email</label>
-                                <input class="col-8" type="text" id="email" name="email"><br>
+                                <label for="email" class="col-4 fs-5 my-2 text-info">email</label>
+                                <input
+                                    class="col-8 fs-5 my-2 text-info text-info bg-black border-0 border-bottom focus-ring shadow-none"
+                                    type="text" id="email" name="email"><br>
                             </div>
                         </div>
 
