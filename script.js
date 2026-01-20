@@ -38,23 +38,25 @@ const teamMembers = [
 ];
 
 // selectors
-let teamMemberCards = document.getElementById("team-member-cards");
+let grid = document.getElementById("grid");
 
 for (const member of teamMembers) {
-  teamMemberCards.innerHTML += `
-        <div class="col-md-6 col-lg-4">
-          <div id="card">
-            <div class="row">
+  grid.innerHTML += `
+        <div class="col-lg-6 col-xxl-4">
+        <div class="bg-black text-white">
+        <div class="row">
+
               <div class="col-4">
-                <img src="${member.img}" class="img-fluid" alt="${member.name}">
+                <img class="h-100 w-100" src="${member.img}" alt="${member.name}">
               </div>
 
-              <div class="col-8">
-                  <h2>${member.name}</h2>
-                  <p>${member.role}</p>
-                  <a href="mailto:${member.email}">${member.email}</a>
+              <div class="col-8 my-4">
+                  <h2 class="fs-3 mb-0 fw-bold">${member.name.toUpperCase()}</h2>
+                  <p class="fs-5 mb-0">${member.role}</p>
+                  <a class="fs-5 text-info text-decoration-none" href="mailto:${member.email}">${member.email}</a>
               </div>
-            </div>
-          </div>
+
+        </div>
+        </div>
         </div>`;
 }
