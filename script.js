@@ -67,6 +67,7 @@ for (const member of teamMembers) {
   addMember(member);
 }
 
+// ------ finisci BONUS ------
 // adding listener
 form.addEventListener("change", (e) => {
   const file = e.target.files[0];
